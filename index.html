@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(234, 29%, 20%);
+        text-decoration: none;
+        font: 700 12px Roboto, sans-serif;
+      }
+    </style>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -->
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main
+      class="col-12 d-md-flex flex-column justify-content-center align-items-center"
+      id="main"
+    >
+      <div
+        class="d-flex flex-column flex-md-row-reverse justify-content-md-between align-items-md-center"
+        id="general-container"
+      >
+        <div id="img-container">
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            class="responsive-img"
+            alt="illustration-sign-up"
+          />
+        </div>
+        <div class="Sign-up-Container p-3 d-flex flex-column m-md-5">
+          <!-- Sign-up form start -->
+          <h1 class="mb-3">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <div class="container-check d-flex flex-column gap-3 mb-5">
+            <span class="d-flex gap-3 align-items-start">
+              <img src="assets/images/icon-list.svg" alt="icon-list" /> Product
+              discovery and building what matters
+            </span>
+            <span class="d-flex gap-3 align-items-start"
+              ><img src="assets/images/icon-list.svg" alt="icon-list" />
+              Measuring to ensure updates are a success</span
+            >
+            <span class="d-flex gap-3 align-items-start"
+              ><img src="assets/images/icon-list.svg" alt="icon-list" /> And
+              much more!</span
+            >
+          </div>
+          <form class="d-flex flex-column gap-4" id="data-form" novalidate>
+            <div>
+              <div class="row justify-content-md-between">
+                <label for="email" class="mb-2 col-6">Email address</label>
+                <label
+                  for="email"
+                  class="col-6 col-md-0 d-none"
+                  id="Email-warning"
+                  >Valid email required</label
+                >
+              </div>
+              <input
+                type="email"
+                placeholder="email@company.com"
+                class="form-control p-4"
+                id="email-input"
+              />
+            </div>
+            <button class="p-4 border-0 rounded-2" id="submit-button">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <!-- Sign-up form end -->
+      </div>
+
+      <!-- Success message start -->
+      <div
+        class="Success-message-container p-3 d-none flex-column justify-content-end rounded-5"
+        id="Success-message-container"
+      >
+        <div
+          class="container-1 d-flex flex-column justify-content-md-center align-items-md-start gap-3 px-md-5"
+        >
+          <img
+            src="assets/images/icon-success.svg"
+            alt="icon-success.svg"
+            id="icon-success"
+          />
+          <h2>Thanks for subscribing!</h2>
+          <p class="">
+            A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+        <div class="d-md-flex justify-content-md-center">
+          <button
+            class="btn-Info p-3 border-0 rounded-2 mb-md-4"
+            id="btn-dismiss"
+          >
+            Dismiss message
+          </button>
+        </div>
+      </div>
+      <!-- Success message end -->
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Mateo Parra Ledesma</a>.
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+/* Colors variables */
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font: 400 16px Roboto, sans-serif;
+  color: var(--Dark-Slate-Grey);
+  height: max-content;
+}
+
+main {
+  height: 100vh;
+  /*background-color: var(--Dark-Slate-Grey);*/
+}
+
+#general-container {
+  background-color: var(--White);
+}
+
+.Sign-up-Container {
+  background-color: var(--White);
+  height: max-content;
+  gap: 16px;
+}
+
+.responsive-img {
+  width: 100%;
+}
+
+h1 {
+  font: 700 40px Roboto, sans-serif;
+}
+
+.container-check {
+  justify-content: space-around;
+}
+
+label {
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+}
+
+button:active {
+  background: linear-gradient(90deg, hsl(340.62deg 100% 73.06%), var(--Tomato));
+  box-shadow: 0px 0px 7px 0px var(--Tomato);
+}
+
+.Success-message-container {
+  /*display: none;*/
+  height: 100vh;
+  background-color: var(--White);
+  gap: 30vh;
+}
+
+#icon-success {
+  width: 62px;
+}
+
+h2 {
+  width: min-content;
+  font: 700 38px Roboto, sans-serif;
+}
+
+#btn-dismiss {
+  width: 100%;
+}
+
+.attribution {
+  background-color: var(--White);
+  color: var(--Dark-Slate-Grey);
+}
+
+.attribution a {
+  background-color: var(--White);
+  color: var(--Dark-Slate-Grey);
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    background-color: var(--Dark-Slate-Grey);
+    height: 100vh;
+  }
+
+  #general-container {
+    overflow: hidden;
+    width: 65%;
+    min-height: 70%;
+    border-radius: 20px;
+    margin: 5px;
+  }
+
+  .Sign-up-Container {
+    background-color: var(--White);
+    width: 50%;
+    overflow: hidden;
+  }
+
+  #img-container {
+    height: 100%;
+  }
+
+  .responsive-img {
+    content: url(assets/images/illustration-sign-up-desktop.svg);
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 20px 0px;
+    position: relative;
+    left: 0px;
+  }
+
+  #submit-button:hover {
+    background: linear-gradient(
+      90deg,
+      hsl(340.62deg 100% 73.06%),
+      var(--Tomato)
+    );
+  }
+
+  .Success-message-container {
+    max-width: 500px;
+    height: 500px;
+    gap: 70px;
+  }
+
+  #btn-dismiss {
+    width: 80%;
+  }
+
+  #btn-dismiss:hover {
+    background: linear-gradient(
+      90deg,
+      hsl(340.62deg 100% 73.06%),
+      var(--Tomato)
+    );
+  }
+
+  #Email-warning {
+    width: 43%;
+  }
+
+  .attribution {
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+  }
+
+  .attribution a {
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    height: max-content;
+  }
+
+  .Sign-up-Container {
+    gap: 0px;
+  }
+}
